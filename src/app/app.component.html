@@ -1,0 +1,12 @@
+<div class="content">
+    <h1>Dog Breed Lists</h1>
+    <div class="gallery">
+        <figure class="galleryItem" *ngFor="let dog of dogImagesSrc, let idx = index">
+            <a tabindex="{{idx}}">
+                <img [src]="dog" alt="{{figureTitle[idx]}}"
+                    onerror="this.src='assets/wallpaperflare.com_wallpaper.jpg'">
+                <figcaption>{{figureTitle[idx]}}</figcaption>
+            </a>
+        </figure>
+    </div>
+</div>
